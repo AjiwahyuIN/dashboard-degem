@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Degem</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+
+
+
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+
+</head>
+<body>
+    <div class="section">
+        <div class="container flex-r">
+            
+            <img onclick="toggleMenu()" src="asset/collapse-arrow.svg" class="cursor collapse-arrow"/>
+            <div class="side-nav flex-c h-center">
+                
+                <a class="logo block">
+                    <img class="big" src="asset//new-logo-full.svg"/>
+                    <img class="small" src="asset//logo.png"/>
+                </a>
+
+                <div class="side-menu-wrap flex-c h-left">
+                    <a class="cursor flex-r v-center menu-1">
+                        <img src="asset/menu1-sm.svg" />
+                        <span class="t-500">dashboard</span>
+                    </a>
+                    <a class="cursor flex-r v-center menu-2">
+                        <img src="asset/menu2-sm.svg" />
+                        <span class="t-500">launchpad</span>
+                    </a>
+                    <a class="cursor flex-r v-center menu-3">
+                        <img src="asset/menu3-sm.svg" />
+                        <span class="t-500">gem cave</span>
+                    </a>
+                    <a class="cursor flex-r v-center menu-4">
+                        <img src="asset/menu4-sm.svg" />
+                        <span class="t-500">refinery</span>
+                    </a>
+                    <a class="cursor flex-r v-center menu-5">
+                        <img src="asset/menu5-sm.svg" />
+                        <span class="t-500">treasury</span>
+                    </a>
+                </div>
+
+                <div class="side-menu-btm flex-c h-left">
+                    <a class="cursor flex-r v-center" href="https://t.me/degemofficial" target="_blank">
+                        <img src="asset/social1-ico.svg" /> 
+                        <span>Telegram</span>
+                    </a>
+                    <a class="cursor flex-r v-center" href="https://twitter.com/degemofficial?s=09" target="_blank">
+                        <img src="asset/social2-ico.svg" /> 
+                        <span>Twitter</span>
+                    </a>
+                    <a class="cursor flex-r v-center" href="https://Degem.io" target="_blank">
+                        <img src="asset/social3-ico.svg" /> 
+                        <span>Website</span>
+                    </a>
+                    <a class="cursor flex-r v-center">
+                        <img src="asset/setting-ico.svg" /> 
+                        <span>Setting</span>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="main-content">
+
+                <div class="banner-top-wrapper margin-btm-35 flex-r h-center">
+                    <!-- <img src="" /> -->
+                    <!-- <img src="" /> -->
+                    <span>Advertising</span>
+                    <span>Advertising</span>
+                </div>
+
+                <div class="top-toolbar flex-r v-center just-space margin-btm-51">    
+                    <div class="top-search-wrap flex-r v-center just-space">
+                        <div class="top-searchbox flex-r v-center">
+                            <img src="asset/search-ico.svg"/>
+                            <input type="text" placeholder="Search..">
+                        </div>
+                        <button class="t-500 t-14-14 cursor">
+                            Connect Wallet
+                        </button>
+                    </div>
+                </div>
+
+
+                
+                <div class="live-chart-content margin-btm-32">
+                    <div class="top-content flex-r just-space v-center margin-btm-24">
+                        <label class="t-700 t-20-24 d-none">
+                            Live Chart
+                        </label>
+                    </div>
+
+                    
+                    <div class="top-coin margin-btm-48">
+                        <div class="top-block flex-c">
+                            <div class="flex-r v-center just-space">
+                                <div class="flex-r v-center t-600 t-18-21 coin-title">
+                                    <img />
+                                    Bitcoin
+                                </div>
+                                <span class="t-600 t-18-21 coin-desc">
+                                    BTC
+                                </span>
+                            </div>
+                            <!-- TradingView Widget BEGIN -->
+                            <div class="tradingview-widget-container">
+                                <div class="tradingview-widget-container__widget"></div>
+                                <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/BTCUSD/?exchange=COINBASE" rel="noopener" target="_blank"><span class="blue-text">BTCUSD Rates</span></a> by TradingView</div>
+                                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                                {
+                                "symbol": "COINBASE:BTCUSD",
+                                "width": "100%",
+                                "height": "100%",
+                                "locale": "en",
+                                "dateRange": "1D",
+                                "colorTheme": "dark",
+                                "trendLineColor": "rgba(41, 98, 255, 1)",
+                                "underLineColor": "rgba(41, 98, 255, 0.3)",
+                                "underLineBottomColor": "rgba(41, 98, 255, 0)",
+                                "isTransparent": false,
+                                "autosize": true,
+                                "largeChartUrl": ""
+                            }
+                                </script>
+                            </div>
+                            <!-- TradingView Widget END -->
+                        </div>
+                        <div class="top-block flex-c">
+                            <div class="flex-r v-center just-space">
+                                <div class="flex-r v-center t-600 t-18-21 coin-title">
+                                    <img />
+                                    Ethereum
+                                </div>
+                                <span class="t-600 t-18-21 coin-desc">
+                                    ETH
+                                </span>
+                            </div>
+                            <!-- TradingView Widget BEGIN -->
+                            <div class="tradingview-widget-container">
+                                <div class="tradingview-widget-container__widget"></div>
+                                <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/ETHUSD/?exchange=COINBASE" rel="noopener" target="_blank"><span class="blue-text">ETHUSD Rates</span></a> by TradingView</div>
+                                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                                {
+                                "symbol": "COINBASE:ETHUSD",
+                                "width": "100%",
+                                "height": "100%",
+                                "locale": "en",
+                                "dateRange": "1D",
+                                "colorTheme": "dark",
+                                "trendLineColor": "rgba(41, 98, 255, 1)",
+                                "underLineColor": "rgba(41, 98, 255, 0.3)",
+                                "underLineBottomColor": "rgba(41, 98, 255, 0)",
+                                "isTransparent": false,
+                                "autosize": true,
+                                "largeChartUrl": ""
+                            }
+                                </script>
+                            </div>
+                            <!-- TradingView Widget END -->
+                        </div>
+                        <div class="top-block flex-c">
+                            <div class="flex-r v-center just-space">
+                                <div class="flex-r v-center t-600 t-18-21 coin-title">
+                                    <img />
+                                    Theter
+                                </div>
+                                <span class="t-600 t-18-21 coin-desc">
+                                    USDT
+                                </span>
+                            </div>
+                            <!-- TradingView Widget BEGIN -->
+                            <div class="tradingview-widget-container">
+                                <div class="tradingview-widget-container__widget"></div>
+                                <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/USDTUSD/?exchange=COINBASE" rel="noopener" target="_blank"><span class="blue-text">USDTUSD Rates</span></a> by TradingView</div>
+                                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                                {
+                                "symbol": "COINBASE:USDTUSD",
+                                "width": "100%",
+                                "height": "100%",
+                                "locale": "en",
+                                "dateRange": "1D",
+                                "colorTheme": "dark",
+                                "trendLineColor": "rgba(41, 98, 255, 1)",
+                                "underLineColor": "rgba(41, 98, 255, 0.3)",
+                                "underLineBottomColor": "rgba(41, 98, 255, 0)",
+                                "isTransparent": false,
+                                "autosize": true,
+                                "largeChartUrl": ""
+                            }
+                                </script>
+                            </div>
+                            <!-- TradingView Widget END -->
+                        </div>
+                    </div>
+
+
+
+                    <div class="inner-content flex-c">
+                        <div class="ticker-coin flex-r v-center margin-btm-24">
+                            <img />
+                            <div class="flex-r">
+                                <div class="flex-c">
+                                    <span class="t-600 t-16-19 coin-name">
+                                        DOGE/BNB
+                                    </span>
+                                    <span class="t-500 t-12-14 coin-value">
+                                        0.216440
+                                    </span>
+                                </div>
+                                <div class="flex-c">
+                                    <span class="t-600 t-16-19 coin-name">
+                                        Total Supply
+                                    </span>
+                                    <span class="t-500 t-12-14 coin-value">
+                                        100,000,000,000,000,000
+                                    </span>
+                                </div>
+                                <div class="flex-c">
+                                    <span class="t-600 t-16-19 coin-name">
+                                        Market Cap
+                                    </span>
+                                    <span class="t-500 t-12-14 coin-value">
+                                        $432,972,736
+                                    </span>
+                                </div>
+                                <div class="flex-c">
+                                    <span class="t-600 t-16-19 coin-name">
+                                        Liquidity
+                                    </span>
+                                    <span class="t-500 t-12-14 coin-value">
+                                        $11,023,312
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="chart-block">
+                            <!-- TradingView Widget BEGIN -->
+                            <div class="tradingview-widget-container">
+                                <div id="tradingview_96ca6" class="chart-content"></div>
+                                <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/FX-BTCUSD/" rel="noopener" target="_blank"><span class="blue-text">BTCUSD Chart</span></a> by TradingView</div>
+
+                                <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                                <script type="text/javascript">
+                                    new TradingView.widget(
+                                            {
+                                            "autosize": true,
+                                            "symbol": "FX:BTCUSD",
+                                            "interval": "5",
+                                            "timezone": "Etc/UTC",
+                                            "theme": "dark",
+                                            "style": "1",
+                                            "locale": "en",
+                                            "toolbar_bg": "#f1f3f6",
+                                            "enable_publishing": false,
+                                            "withdateranges": true,
+                                            "hide_side_toolbar": false,
+                                            "allow_symbol_change": true,
+                                            "container_id": "tradingview_96ca6"
+                                        }
+                                    );
+                                </script>
+                            </div>
+                            <!-- TradingView Widget END -->
+                         </div>
+                    </div>
+                </div>
+
+
+                <div class="swap-token-content margin-btm-32">
+                    
+
+
+                    
+                    <div class="inner-content flex-r v-btm just-space">
+                        <div class="swap-inpt-wrap">
+                            <div class="label block margin-btm-16 flex-r v-btm just-space">
+                                <span class="t-500 t-18-21">From</span>
+                            </div>
+                            <div class="swap-inpt-block flex-r v-center">
+                                <input type="number" placeholder="Ex. 12,000..."/>
+                                <select>
+                                    <option>
+                                        BTC
+                                    </option>
+                                    <option>
+                                        ETH
+                                    </option>
+                                    <option>
+                                        USDT
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <img src="asset/gg_arrows-exchange.svg"/>
+
+                        <div class="swap-inpt-wrap">
+                            <div class="label block margin-btm-16 flex-r v-btm just-space">
+                                <span class="t-500 t-18-21">To</span>
+                                <button class="hide-m cursor">
+                                    0,5%
+                                </button>
+                            </div>
+                            <div class="swap-inpt-block flex-r v-center">
+                                <input type="number" placeholder="Ex. 12,000..."/>
+                                <select>
+                                    <option>
+                                        BTC
+                                    </option>
+                                    <option>
+                                        ETH
+                                    </option>
+                                    <option>
+                                        USDT
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="swap-btn-wrap flex-c"> 
+                            <div class="flex-r">
+                                <button class="show-m cursor">
+                                    0,5%
+                                </button>
+                                <button class="cursor t-400 t-14-16 margin-btm-16">
+                                    Auto Slippage
+                                </button>
+                            </div>
+                            <button class="cursor btn-gradient t-500 t-14-14">
+                                Swap
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="order-book-content margin-btm-80">
+                    
+
+                    
+                    <div class="inner-content">
+                        <div class="order-table-head flex-r just-space">
+                            <div class="flex-r v-center h-center">
+                                <div class="t-16-19">
+                                    TYPE
+                                </div>
+                            </div>
+                            <div class="flex-r v-center h-center">
+                                <div class="t-16-19">
+                                    PRICE
+                                </div>
+                            </div>
+                            <div class="flex-r v-center h-center">
+                                <div class="t-16-19">
+                                    TOKEN
+                                </div>
+                            </div>
+                            <div class="hide-m flex-r v-center h-center">
+                                <div class="t-16-19">
+                                    Price/Token
+                                </div>
+                            </div>
+                            <div class="flex-r v-center h-center">
+                                <div class="t-16-19">
+                                    TIME
+                                </div>
+                            </div>
+                            <div class="hide-m flex-r v-center h-center">
+                                <div class="t-16-19">
+                                    TX
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="order-itm-wrap">
+                            <div class="order-table-itm green-label flex-r just-space">
+                                <div class="flex-r v-center h-center">
+                                    <div class="t-16-19 ">
+                                        Buy
+                                    </div>
+                                </div>
+                                <div class="flex-r v-center h-center">
+                                    <div class="t-16-19 t-right">
+                                        $39.48
+                                        <br>
+                                        0.94862 BNB
+                                    </div>
+                                </div>
+                                <div class="flex-r v-center h-center">
+                                    <div class="t-16-19 t-right">
+                                        289,000.125
+                                        <br>
+                                        Doge
+                                    </div>
+                                </div>
+                                <div class="hide-m flex-r v-center h-center">
+                                    <div class="t-16-19 t-right">
+                                        $0.1348
+                                    </div>
+                                </div>
+                                <div class="flex-r v-center h-center">
+                                    <div class="t-16-19 t-right">
+                                        18:34:28
+                                    </div>
+                                </div>
+                                <div class="hide-m flex-r v-center h-center">
+                                    <div class="t-16-19 t-right">
+                                        0x3896
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order-table-itm green-label flex-r just-space">
+                                <div class="flex-r v-center h-center">
+                                    <div class="t-16-19 ">
+                                        Buy
+                                    </div>
+                                </div>
+                                <div class="flex-r v-center h-center">
+                                    <div class="t-16-19 t-right">
+                                        $39.48
+                                        <br>
+                                        0.94862 BNB
+                                    </div>
+                                </div>
+                                <div class="flex-r v-center h-center">
+                                    <div class="t-16-19 t-right">
+                                        289,000.125
+                                        <br>
+                                        Doge
+                                    </div>
+                                </div>
+                                <div class="hide-m flex-r v-center h-center">
+                                    <div class="t-16-19 t-right">
+                                        $0.1348
+                                    </div>
+                                </div>
+                                <div class="flex-r v-center h-center">
+                                    <div class="t-16-19 t-right">
+                                        18:34:28
+                                    </div>
+                                </div>
+                                <div class="hide-m flex-r v-center h-center">
+                                    <div class="t-16-19 t-right">
+                                        0x3896
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order-table-itm green-label flex-r just-space">
+                                <div class="flex-r v-center h-center">
+                                    <div class="t-16-19 ">
+                                        Buy
+                                    </div>
+                                </div>
+                                <div class="flex-r v-center h-center">
+                                    <div class="t-16-19 t-right">
+                                        $39.48
+                                        <br>
+                                        0.94862 BNB
+                                    </div>
+                                </div>
+                                <div class="flex-r v-center h-center">
+                                    <div class="t-16-19 t-right">
+                                        289,000.125
+                                        <br>
+                                        Doge
+                                    </div>
+                                </div>
+                                <div class="hide-m flex-r v-center h-center">
+                                    <div class="t-16-19 t-right">
+                                        $0.1348
+                                    </div>
+                                </div>
+                                <div class="flex-r v-center h-center">
+                                    <div class="t-16-19 t-right">
+                                        18:34:28
+                                    </div>
+                                </div>
+                                <div class="hide-m flex-r v-center h-center">
+                                    <div class="t-16-19 t-right">
+                                        0x3896
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order-table-itm green-label flex-r just-space">
+                                <div class="flex-r v-center h-center">
+                                    <div class="t-16-19 ">
+                                        Buy
+                                    </div>
+                                </div>
+                                <div class="flex-r v-center h-center">
+                                    <div class="t-16-19 t-right">
+                                        $39.48
+                                        <br>
+                                        0.94862 BNB
+                                    </div>
+                                </div>
+                                <div class="flex-r v-center h-center">
+                                    <div class="t-16-19 t-right">
+                                        289,000.125
+                                        <br>
+                                        Doge
+                                    </div>
+                                </div>
+                                <div class="hide-m flex-r v-center h-center">
+                                    <div class="t-16-19 t-right">
+                                        $0.1348
+                                    </div>
+                                </div>
+                                <div class="flex-r v-center h-center">
+                                    <div class="t-16-19 t-right">
+                                        18:34:28
+                                    </div>
+                                </div>
+                                <div class="hide-m flex-r v-center h-center">
+                                    <div class="t-16-19 t-right">
+                                        0x3896
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order-table-itm green-label flex-r just-space">
+                                <div class="flex-r v-center h-center">
+                                    <div class="t-16-19 ">
+                                        Buy
+                                    </div>
+                                </div>
+                                <div class="flex-r v-center h-center">
+                                    <div class="t-16-19 t-right">
+                                        $39.48
+                                        <br>
+                                        0.94862 BNB
+                                    </div>
+                                </div>
+                                <div class="flex-r v-center h-center">
+                                    <div class="t-16-19 t-right">
+                                        289,000.125
+                                        <br>
+                                        Doge
+                                    </div>
+                                </div>
+                                <div class="hide-m flex-r v-center h-center">
+                                    <div class="t-16-19 t-right">
+                                        $0.1348
+                                    </div>
+                                </div>
+                                <div class="flex-r v-center h-center">
+                                    <div class="t-16-19 t-right">
+                                        18:34:28
+                                    </div>
+                                </div>
+                                <div class="hide-m flex-r v-center h-center">
+                                    <div class="t-16-19 t-right">
+                                        0x3896
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order-table-itm green-label flex-r just-space">
+                                <div class="flex-r v-center h-center">
+                                    <div class="t-16-19 ">
+                                        Buy
+                                    </div>
+                                </div>
+                                <div class="flex-r v-center h-center">
+                                    <div class="t-16-19 t-right">
+                                        $39.48
+                                        <br>
+                                        0.94862 BNB
+                                    </div>
+                                </div>
+                                <div class="flex-r v-center h-center">
+                                    <div class="t-16-19 t-right">
+                                        289,000.125
+                                        <br>
+                                        Doge
+                                    </div>
+                                </div>
+                                <div class="hide-m flex-r v-center h-center">
+                                    <div class="t-16-19 t-right">
+                                        $0.1348
+                                    </div>
+                                </div>
+                                <div class="flex-r v-center h-center">
+                                    <div class="t-16-19 t-right">
+                                        18:34:28
+                                    </div>
+                                </div>
+                                <div class="hide-m flex-r v-center h-center">
+                                    <div class="t-16-19 t-right">
+                                        0x3896
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                
+                <div class="btm-banner flex-r h-center">
+                    <img src="asset/btm-banner.png"/>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        function initChart(){
+            let c = [document.querySelector('.c-1'), document.querySelector('.c-2'), document.querySelector('.c-3')]
+            let c_list = []
+            c.forEach((s)=>{
+                c_list.push(new Chart(s.getContext('2d'), {
+                    type: 'line',
+                    data: {
+                        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                        datasets: [{
+                            label: '',
+                            data: [12, 19, 3, 5, 2, 3],
+                            backgroundColor: [
+                                'rgba(255, 255, 255, 0)',
+                            ],
+                            borderColor: [
+                                'rgba(36, 112, 102, 1)',
+                            ],
+                            borderWidth: 2,
+                            pointBorderWidth: 0,
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        plugins: {
+                            legend: {
+                                display: false
+                            }
+                        },
+                        scales: {
+                            y: {
+                                display: false
+                            },
+                            x: {
+                                display: false
+                            }
+                        },
+                        tooltips: {
+                            enabled: false
+                        },
+                        elements: {
+                            line: {
+                                tension: 0.4
+                            }
+                        }
+                    }
+                }))
+            })
+            
+        }
+
+        function toggleMenu(){
+            if($('.side-nav').attr('class').search('collap') == -1){
+                $('.accord-body').slideUp()
+            }
+            $('.collapse-arrow').toggleClass('collap')
+            $('.side-nav').toggleClass('collap')
+            
+            if(window.innerWidth > 568){
+                $('.logo > img.small').toggle()
+                $('.logo > img.big').toggle()
+            }
+        }
+
+        function toggleAccord(){
+            if($('.side-nav').attr('class').search('collap') > -1){
+                toggleMenu()
+            }
+            $($(event.currentTarget).next()).slideToggle()
+        }
+
+    </script>
+</body>
+</html>
