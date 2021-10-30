@@ -10,7 +10,7 @@
 body{
     width:100vw;
     background-color: #101219;
-    overflow: hidden;
+    overflow: auto;
     margin: unset;
 }
 a{
@@ -319,7 +319,7 @@ button:focus {
     flex:1;
     padding:20px 40px;
     overflow-y: auto;
-    height: 100vh;
+    min-height: 100vh;
     padding-bottom: 78px;
 }
 
